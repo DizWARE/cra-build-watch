@@ -1,9 +1,9 @@
 {
-  "name": "cra-build-watch",
+  "name": "cra-build-watch-ts",
   "version": "0.0.0-development",
-  "description": "A script for create-react-app that writes development builds to the disk",
+  "description": "A script for create-react-app Typescript that writes development builds to the disk",
   "main": "scripts/index.js",
-  "bin": "bin/cra-build-watch.js",
+  "bin": "bin/cra-build-watch-ts.js",
   "files": ["bin", "scripts", "utils"],
   "engines": {
     "node": ">=6.0.0"
@@ -31,15 +31,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nargonath/cra-build-watch.git"
+    "url": "https://github.com/DizWARE/cra-build-watch-ts"
   },
   "bugs": {
-    "url": "https://github.com/Nargonath/cra-build-watch/issues"
+    "url": "https://github.com/DizWARE/cra-build-watch-ts/issues"
   },
-  "homepage": "https://github.com/Nargonath/cra-build-watch#readme",
+  "homepage": "https://github.com/DizWARE/cra-build-watch-ts#readme",
   "author": "Nargonath <jonas.pauthier@gmail.com>",
   "keywords": [
     "create-react-app",
+    "react-scripts-ts",
+    "typescript",
     "react",
     "webpack",
     "development-environment",
@@ -48,7 +50,7 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react-scripts": "^1.0"
+    "react-scripts-ts": "^1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "6.1.3",

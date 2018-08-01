@@ -9,9 +9,9 @@ const ora = require('ora');
 const {
   flags: { buildPath, publicPath, verbose },
 } = require('../utils/cliHandler');
-const paths = importCwd('react-scripts/config/paths');
+const paths = importCwd('react-scripts-ts/config/paths');
 const webpack = importCwd('webpack');
-const config = importCwd('react-scripts/config/webpack.config.dev.js');
+const config = importCwd('react-scripts-ts/config/webpack.config.dev.js');
 const HtmlWebpackPlugin = importCwd('html-webpack-plugin');
 
 console.log();
@@ -38,7 +38,7 @@ config.output.chunkFilename = `js/[name].chunk.js`;
 
 // update media path destination
 config.module.rules[1].oneOf[0].options.name = `media/[name].[hash:8].[ext]`;
-config.module.rules[1].oneOf[3].options.name = `media/[name].[hash:8].[ext]`;
+config.module.rules[1].oneOf[4].options.name = `media/[name].[hash:8].[ext]`;
 config.plugins[1] = new HtmlWebpackPlugin({
   inject: true,
   template: paths.appHtml,

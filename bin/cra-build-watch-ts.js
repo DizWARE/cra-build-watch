@@ -11,7 +11,7 @@ const resolveCwd = require('resolve-cwd');
 require('../utils/cliHandler');
 
 // quick way of checking that react-scripts is installed in the current project
-if (!resolveCwd.silent('react-scripts/bin/react-scripts')) {
+if (!resolveCwd.silent('react-scripts-ts/bin/react-scripts-ts')) {
   console.log();
   console.log(chalk`[{redBright.bold ERROR}] react-scripts must be installed in your project`);
   process.exit(1);

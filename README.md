@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>cra-build-watch</h1>
-  <strong>A script for create-react-app that writes development builds to the disk</strong>
+  <h1>cra-build-watch-ts</h1>
+  <strong>A script for create-react-app Typescript that writes development builds to the disk</strong>
 </div>
 
 <hr>
@@ -8,15 +8,15 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://travis-ci.org/Nargonath/cra-build-watch.svg?branch=master)](https://travis-ci.org/Nargonath/twitter-auth-await)
-[![npm version](https://badge.fury.io/js/cra-build-watch.svg)](https://badge.fury.io/js/cra-build-watch)
+[![Build Status](https://travis-ci.org/Nargonath/cra-build-watch-ts.svg?branch=master)](https://travis-ci.org/Nargonath/twitter-auth-await)
+[![npm version](https://badge.fury.io/js/cra-build-watch-ts.svg)](https://badge.fury.io/js/cra-build-watch-ts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Disclaimer
 
 **The builds resulting from this script are NOT for production environment.** They lack various optimizations.
 
-This script is meant as a temporary workaround for `create-react-app` project based until this feature is built-in into `react-scripts`. See [create-react-app#1070](https://github.com/facebook/create-react-app/issues/1070).
+This script is meant as a temporary workaround for `create-react-app`(including the Typescript flavor) project based until this feature is built-in into `react-scripts-ts`. See [create-react-app#1070](https://github.com/facebook/create-react-app/issues/1070).
 
 This script is inspired by other work related such as: https://gist.github.com/jasonblanchard/ae0d2e304a647cd847c0b4493c2353d4.
 
@@ -33,13 +33,13 @@ As of now (20/04/2018), `create-react-app` (more precisely `react-scripts`) does
 Add it to your project using `npm`:
 
 ```
-npm install -D cra-build-watch
+npm install --save-dev cra-build-watch-ts
 ```
 
 or using `yarn`:
 
 ```
-yarn add -D cra-build-watch
+yarn add --dev cra-build-watch-ts
 ```
 
 # Usage
@@ -49,7 +49,7 @@ Add a new script into your `package.json`:
 ```json
 {
   "scripts": {
-    "watch": "cra-build-watch"
+    "watch": "cra-build-watch-ts"
   }
 }
 ```
