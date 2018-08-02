@@ -1,6 +1,6 @@
 {
   "name": "cra-build-watch-ts",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description":
     "A script for create-react-app Typescript that writes development builds to the disk",
   "main": "scripts/index.js",
