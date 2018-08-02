@@ -5,7 +5,7 @@ const meow = require('meow');
 module.exports = meow(
   `
     Usage
-      $ cra-build-watch [options]
+      $ cra-build-watch-ts [options]
 
     Options
       -b, --build-path Path to the build folder. Absolute or relative path, if relative will be prefixed with project root folder path.
@@ -15,7 +15,7 @@ module.exports = meow(
       -v, --verbose
 
     Examples
-      $ cra-build-watch -b dist/ -p /assets
+      $ cra-build-watch-ts -b dist/ -p /assets
 `,
   {
     flags: {
